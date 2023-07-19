@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page with Background Image Example</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="bg"></div>
+
+    <form>
+      <div class="form-field">
+        <input
+          type="email"
+          id="username"
+          placeholder="Email / Username"
+          required
+        />
+      </div>
+
+      <div class="form-field">
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+
+      <div class="form-field">
+        <button class="btn" onclick="func()" type="submit">Log in</button>
+      </div>
+    </form>
+    <!-- partial -->
+    <script>
+      function func() {
+        var mail = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        if(mail=='adarshuchibagle2002@gmail.com' && pass=='A123'){
+          window.location="https://adarshgith.github.io/Adarsh_Uchibagle_portfolio/";
+          alert("Login Successfully");
+        }
+        else{
+          alert("Invalid information");
+        }
+      }
+    </script>
+  </body>
+</html>
